@@ -1,3 +1,12 @@
 # Strapi application
 
-A quick description of your strapi application
+```bash
+yarn develop
+```
+
+
+
+# Sqlite default creds
+login/email: `gorshkov88@gmail.com`
+
+pass: `Qweqwe123`
