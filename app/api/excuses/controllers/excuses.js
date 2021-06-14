@@ -7,7 +7,6 @@
 
 module.exports = {
   randomExcuse: async (ctx) => {
-    strapi.log.debug('qweqwe', await strapi.models.excuses)
     const excuseRaw = await strapi.models.excuses
       .query((qb) =>
         qb
