@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/excuses",
+      "handler": "excuses.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/excuses/count",
+      "handler": "excuses.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/excuses/:id",
+      "handler": "excuses.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/excuses",
+      "handler": "excuses.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/excuses/:id",
+      "handler": "excuses.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/excuses/:id",
+      "handler": "excuses.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

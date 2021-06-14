@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "excuses",
+  "info": {
+    "name": "excuses",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "min_time": {
+      "type": "integer"
+    },
+    "max_time": {
+      "type": "integer"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "excuses",
+      "dominant": true
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

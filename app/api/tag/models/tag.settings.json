@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags",
+  "info": {
+    "name": "tag"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "tag": {
+      "type": "string"
+    },
+    "is_active": {
+      "type": "boolean"
+    },
+    "excuses": {
+      "via": "tags",
+      "collection": "excuses"
+    }
+  }
+}
