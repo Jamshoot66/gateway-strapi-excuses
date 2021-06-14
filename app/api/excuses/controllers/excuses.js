@@ -5,4 +5,19 @@
  * to customize this controller
  */
 
-module.exports = {};
+module.exports = {
+  randomExcuse: async (ctx) => {
+    strapi.log.debug('qweqwe', await strapi.models.excuses)
+    const excuseRaw = await strapi.models.excuses
+      .query((qb) =>
+        qb
+          .select(['id', 'text', 'min_time', 'max_time'])
+          .where('is_active', '=', true)
+          .orderByRaw('RANDOM()')
+          .limit(1)
+      )
+      .fetchAll();
+
+    return excuseRaw.toJSON();
+  }
+};

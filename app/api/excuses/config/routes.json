@@ -10,6 +10,14 @@
     },
     {
       "method": "GET",
+      "path": "/excuse",
+      "handler": "excuses.randomExcuse",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/excuses/count",
       "handler": "excuses.count",
       "config": {
