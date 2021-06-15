@@ -17,6 +17,6 @@ module.exports = {
       )
       .fetchAll();
 
-    return excuseRaw.toJSON();
+    return excuseRaw.toJSON()[0];
   }
 };
